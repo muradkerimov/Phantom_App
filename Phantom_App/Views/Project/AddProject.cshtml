@@ -1,0 +1,26 @@
+﻿<div class="inner projects">
+    <h1>Add Project</h1>
+    <section>
+        <form method="post" action="/project/addprojecttodb">
+            <div class="fields">
+                <div class="field">
+                    <input type="text" name="title" id="name" placeholder="Title" />
+                </div>
+
+                <div class="field">
+                    <input type="text" name="SubTitle" id="message" placeholder="Subtitle" />
+                </div>
+                <div class="field">
+                    <textarea name="Description" id="message" placeholder="Description"></textarea>
+                </div>
+                <div class="field">
+                    <input type="text" name="Image" placeholder="Image url" />
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send" id="send" class="primary" /></li>
+            </ul>
+        </form>
+    </section>
+</div>
+<input type="hidden" id="addedproject" name="name" value="@TempData["addedproject"]" />

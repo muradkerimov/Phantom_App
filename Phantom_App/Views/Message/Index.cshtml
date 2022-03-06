@@ -1,0 +1,11 @@
+﻿@model HomeViewModel
+<h3>Message</h3>
+@foreach (Message item in @Model.messages)
+{
+    <blockquote>
+        <h4>@item.UserName</h4>
+        <h6 class="half">@item.UserEmail</h6>
+        <h6 class="half">@item.MessageDate</h6>
+        <p>@item.Text</p>
+    </blockquote>
+}
